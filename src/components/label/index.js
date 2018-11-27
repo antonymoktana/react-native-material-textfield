@@ -4,7 +4,7 @@ import { Animated } from 'react-native';
 
 export default class Label extends PureComponent {
   static defaultProps = {
-    numberOfLines: 1,
+    numberOfLines: 5,
 
     active: false,
     focused: false,
@@ -105,8 +105,8 @@ export default class Label extends PureComponent {
     let top = input.interpolate({
       inputRange: [0, 1],
       outputRange: [
-        baseSize + fontSize * 0.25,
-        baseSize - basePadding - activeFontSize,
+        baseSize + fontSize * 0.1,
+        baseSize,
       ],
     });
 
